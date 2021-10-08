@@ -25,7 +25,47 @@
     <title>Cameron Rosenberger | Software Engineer</title>
   </head>
   <body>
-    <nav></nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navigation"
+    id="nav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img class="header-logo" src="images/newDevLogo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          id="navigation"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+              <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </nav>
     <header class="jumbotron jumbo-hero bg-dark md-bg-none">
       <div
         class="
@@ -80,9 +120,9 @@
             </div>
             <div class="hero-text col-10 hero-container">
               <h1 class="text-white">
-                Aspiring<br />
+                Software<br />
                 <span class="text-primary font-weight-bolder"
-                  ><strong>Software Engineer</strong></span
+                  ><strong>Engineer</strong></span
                 >
               </h1>
               <p class="lead text-white">
@@ -90,8 +130,9 @@
                 With Web Development Solutions
               </p>
               <a href="#projects" class="btn btn-primary mt-3"
-                >Recent Projects</a
-              >
+                >Recent Projects</a>
+                <a href="#contact" class="btn btn-primary mt-3"
+                >Contact Me</a>
             </div>
           </div>
         </div>
@@ -102,6 +143,46 @@
             <div class="row d-flex justify-content-center my-5">
                 <div class="col-12 mt-5 mb-3 content-container">
                     <h1>Projects</h1>
+                </div>
+                <div class="card-deck col
+                d-flex
+                justify-content-center
+                align-items-center
+                flex-wrap
+              ">
+                  <div class="card text-white bg-dark mb-3">
+                    <img class="card-img-top" src="images/AlongCameASpiderScreen1.png" alt="Game project image">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                      <a class="btn btn-outline-primary" href="https://github.com/CRose17"
+                target="_blank"
+                ><i class="fab fa-github-square" aria-hidden="true"></i
+              ></a>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-dark mb-3 mt-5">
+                    <img class="card-img-top" src="images/versus-obstacle-scrn.png" alt="React website project image">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-dark mb-3 mt-5">
+                    <img class="card-img-top" src="images/Heartfoods.png" alt="React Native project image">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
                 </div>
                 <div class="row d-flex justify-content-center my-5" id="about">
                     <div class="col-xl-10 mx-auto">
@@ -158,7 +239,6 @@
                                   </figcaption>
                                 </div>
                               </div>
-              
                               <div class="col-3 col-md-2 m-1 skill-div back-skill">
                                 <div class="skill-box">
                                   <img
@@ -183,7 +263,6 @@
                                   </figcaption>
                                 </div>
                               </div>
-              
                               <div class="col-3 col-md-2 m-1 skill-div front-skill">
                                 <div class="skill-box">
                                   <img
@@ -206,7 +285,6 @@
                                   <figcaption class="text-center pt-1 small">Expo</figcaption>
                                 </div>
                               </div>
-              
                               <div class="col-3 col-md-2 m-1 skill-div Mobile-skill">
                                 <div class="skill-box">
                                   <img
@@ -219,7 +297,6 @@
                                   </figcaption>
                                 </div>
                               </div>
-              
                               <div class="col-3 col-md-2 m-1 skill-div mobile-skill">
                                 <div class="skill-box">
                                   <img
@@ -232,7 +309,6 @@
                                   </figcaption>
                                 </div>
                               </div>
-              
                               <div class="col-3 col-md-2 m-1 skill-div mobile-skill">
                                 <div class="skill-box">
                                   <img
@@ -271,26 +347,71 @@
                     </div>
                 </div>
             </div>
+            <div class="row d-flex justify-content-center my-5" id="contact">
+              <div class="col-xl-10 mx-auto">
+                  <div class="about-section content-container bg-light">
+                      <h1 class="my-5 mb-3">Contact</h1>
+                      <form class="">
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                          <label for="inputFirstName" class="col-sm-2 col-form-label">First name</label>                          
+                            <input type="text" id="inputFirstName" class="form-control" placeholder="First name">
+                          </div>                        
+                          <div class="form-group col-md-6">
+                          <label for="inputLastName" class="col-sm-2 col-form-label">Last name</label>                          
+                            <input type="text" id="inputLastName" class="form-control" placeholder="Last name">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                          <div class="form-group col-md-6">
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email">
+                          </div>                        
+                        </div>
+                        <div class="form-group col-md-6 mt-3">
+                          <label for="description">Description</label>
+                          <textarea class="form-control" id="description" rows="5"></textarea>
+                        </div>
+                        <div class="form-group-row">
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary mt-3">Reach Out</button>
+                          </div>
+                        </div>
+                      </form>
+                  </div>
+              </div>
+            </div>
         </div>
     </main>
-    <footer>
+    <footer class="bg-dark text-white d-flex justify-content-center py-3">
         <div class="container">
-            <div class="row">
-            <div class="col-4 col-sm-2"></div>
-                <h5>Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <div class="row mt-3">
+            <div class="col-8 col-md-5 mx-auto">
+              <a href="#"><img src="images/newDevLogo.png" alt="" class=" nav-link active img-fluid"/></a>
+              </div>
             </div>
-            <div class="col-6 col-sm-5">
-                <h5>Social</h5>
-                <a href="https://github.com/CRose17">GitHub</a>
-                <a href="https://www.linkedin.com/in/cameron-rosenberger/">LinkedIn</a>
+            <div class="row my-3 my-md-5">
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center">
+                <nav class="nav flex-column">
+                  <a class="nav-link active" href="#">Home</a>
+                  <a class="nav-link" href="#projects">Projects</a>
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#contact">Contact</a>
+                </nav>
+              </div>
+            <div class="col-md-4 text-center">
+              <div class="d-flex align-items-center justify-content-center contact-icons">         
+                <a class="nav-link m-2" href="https://github.com/CRose17"
+                target="_blank"
+                ><i class="fab fa-github-square" aria-hidden="true"></i
+              ></a>
+                <a class="nav-link m-2" href="https://www.linkedin.com/in/cameron-rosenberger/"
+                target="_blank"
+                ><i class="fab fa-linkedin" aria-hidden="true"></i
+              ></a>
+              </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6 col-md-4 d-flex justify-content-center text-light">
                 Tel: 1-206-353-2553<br />
                 Email: cameron@crosendeveloper.com
             </div>
