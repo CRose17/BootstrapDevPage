@@ -25,28 +25,26 @@
     <title>Cameron Rosenberger | Software Engineer</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navigation"
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
     id="nav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
           ><img class="header-logo" src="images/newDevLogo.png" alt=""
         /></a>
         <button
-          class="navbar-toggler ml-auto"
+          class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navigation"
-          aria-controls="navigation"
+          data-bs-toggle="collapse"
+          data-bs-target="#siteNavbar"
+          aria-controls="siteNavbar"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Toggle navigation"          
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
-          id="navigation"
+          class="collapse navbar-collapse"          
+          id="siteNavbar"
         >
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
@@ -54,7 +52,7 @@
               <span class="sr-only">(current)</span>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link text-light" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -66,6 +64,7 @@
         </div>
       </div>
     </nav>
+
     <header class="jumbotron jumbo-hero bg-dark md-bg-none">
       <div
         class="
@@ -138,6 +137,7 @@
         </div>
       </div>
     </header>
+    
     <main class="col-xl-10 mx-auto" id="projects">
         <div class="container">
             <div class="row d-flex justify-content-center my-5">
@@ -351,7 +351,34 @@
               <div class="col-xl-10 mx-auto">
                   <div class="about-section content-container bg-light">
                       <h1 class="my-5 mb-3">Contact</h1>
-                      <form class="">
+                        <p class="my-3">If you'd like to reach out with commens or questions, you can do so using the following links!</p>
+                        <div class="col-md-10 text-center">
+                          <div class="d-flex align-items-center justify-content-center contact-icons">         
+                            <a class="nav-link m-2" href="https://github.com/CRose17"
+                            target="_blank"
+                            ><i class="fab fa-github-square" aria-hidden="true"></i
+                          ></a>
+                            <a class="nav-link m-2" href="https://www.linkedin.com/in/cameron-rosenberger/"
+                            target="_blank"
+                            ><i class="fab fa-linkedin" aria-hidden="true"></i
+                          ></a>
+                          <div class="click-to-copy-container m-4">
+                            <button 
+                              class="click-to-copy text-white"
+                              title="Click to Copy Email Address"
+                              id="emailButton"
+                            >
+                              cameron@crosendeveloper.com
+                            </button>
+                            <span>Copied!</span>
+                          </div>
+                          <!-- fallback link for mobile resolution -->
+                          <a href="mailto:cameron@crosendeveloper.com" class="click-to-copy-fallback m-4">
+                            cameron@crosendeveloper.com
+                          </a>                             
+                          </div>
+                                                
+                      <!-- <form class="">
                         <div class="form-row">
                           <div class="form-group col-md-6">
                           <label for="inputFirstName" class="col-sm-2 col-form-label">First name</label>                          
@@ -377,7 +404,7 @@
                             <button type="submit" class="btn btn-primary mt-3">Reach Out</button>
                           </div>
                         </div>
-                      </form>
+                      </form> -->
                   </div>
               </div>
             </div>
@@ -410,14 +437,13 @@
                 ><i class="fab fa-linkedin" aria-hidden="true"></i
               ></a>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-4 d-flex justify-content-center text-light">
-                Tel: 1-206-353-2553<br />
-                Email: cameron@crosendeveloper.com
-            </div>
+            </div>            
             </div>
         </div>
     </footer>
+
+    <script src="/js/app.js"></script>
+
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
