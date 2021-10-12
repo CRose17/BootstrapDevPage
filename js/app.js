@@ -38,7 +38,7 @@ const copyToClipboard = (str) => {
 // Fire the event on click
 emailButton.addEventListener("click", clickToCopy);
 
-//  scroll down hide navbar - scroll up show navbar
+/* //  scroll down hide navbar - scroll up show navbar
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -49,4 +49,4 @@ window.onscroll = function () {
     document.getElementById("nav").style = "top: -120px; transition: 0.5s";
   }
   prevScrollpos = currentScrollPos;
-};
+}; */

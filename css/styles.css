@@ -15,7 +15,9 @@ h3 {
 }
 
 .navbar {
+  display: block;
   margin: 0;
+  padding: 0;
 }
 
 .header-logo {
@@ -23,12 +25,33 @@ h3 {
   height: 150px;
 }
 
+.hero-container {
+  margin: 0;
+  padding: 0;
+}
+
 .hero-icons a i {
   font-size: 2rem;
 }
 
+.jumbo-hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: transparent;
+  overflow: hidden;
+  border-radius: 0;
+}
+
 .contact-icons a i {
   font-size: 4rem;
+}
+
+.card {
+  display: flex;
+  height: 500px;
 }
 
 .card-img-top {
@@ -36,7 +59,6 @@ h3 {
   min-width: 50%;
   height: 50%;
   min-height: 50%;
-  transition: all 0.3s ease-in-out;
 }
 
 .card-footer {
