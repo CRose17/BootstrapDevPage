@@ -6,12 +6,17 @@
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run copyfonts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Cameron Rosenberger",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.2.0",
+    "lite-server": "^2.6.1",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
