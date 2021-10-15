@@ -96,17 +96,19 @@ p {
   padding: 20%;
 }
 
-.contact-icons {
+/* .contact-icons {
   margin-left: 60px;
 }
 
-.click-to-copy-container {
+.click-to-copy-button {
   position: relative;
+  margin-left: 60px;
 }
-
+ */
 button.click-to-copy {
   background: #3a64eb;
   border: none;
+  margin-top: 10px;
   box-shadow: none;
   padding: 1rem;
   border-radius: 0.25rem;
