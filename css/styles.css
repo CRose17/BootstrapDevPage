@@ -1,7 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -86,6 +90,14 @@ p {
   height: 40px;
   min-height: 40px;
   transition: all 0.3s ease-in-out;
+}
+
+.about-section {
+  padding: 20%;
+}
+
+.contact-icons {
+  margin-left: 60px;
 }
 
 .click-to-copy-container {
