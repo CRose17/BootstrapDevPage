@@ -65,7 +65,7 @@
     <header class="jumbotron jumbo-hero bg-dark md-bg-none">
       <div
         class="
-          container
+          container-fluid
           py-5
           d-flex
           justify-content-center
@@ -135,7 +135,7 @@
     </header>
     
     <main class="col-xl-10 mx-auto" id="projects">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row d-flex justify-content-center my-5">
                 <div class="col-12 mt-5 mb-3 content-container">
                     <h1>Projects</h1>
@@ -201,11 +201,11 @@
                 </div>
                 <div class="row d-flex justify-content-center my-5" id="about">
                     <div class="col-xl-10 mx-auto">
-                        <div class="about-section content-container">
+                        <div class="about-section content container-fluid">
                             <h1 class="my-5 mb-3">About</h1>
                             <p class="my-3">A recent Full-Stack Bootcamp graduate, I have developed a love and great appreciation for programming. As an artist, musician, fitness enthusiast/trainer and fan of so many things tech, I have found that software development manages to bring together my desire to solve puzzles with the joy of creating something from nothing. And the fact the "good" code boils down to my ability to manipulate space (memory) and time (speed) brings a certain magical aspect to everything I build.</p>
                         </div>
-                        <div class="tools-section content container">
+                        <div class="tools-section content container-fluid">
                             <h2 class="mt-5 mb-3">Skills</h2>
                             <div class="col d-flex flex-wrap justify-content-center">
                               <div class="col-3 col-md-2 m-1 skill-div front-skill">
@@ -362,71 +362,45 @@
                     </div>
                 </div>
             </div>
-            <div class="row d-flex justify-content-center" id="contact">
-              <div class="col-md-10 mx-auto">
-                  <div class="about-section content-container bg-light">
-                      <h1>Contact</h1>
-                        <p>If you'd like to reach out with commens or questions, you can do so using the following links!</p>
-                        <div class="col-md-10 text-center">
-                          <div class="d-flex align-items-center justify-content-center contact-icons">         
-                            <a class="nav-link" href="https://github.com/CRose17"
-                            target="_blank"
-                            ><i class="fab fa-github-square" aria-hidden="true"></i
-                          ></a>
-                            <a class="nav-link" href="https://www.linkedin.com/in/cameron-rosenberger/"
-                            target="_blank"
-                            ><i class="fab fa-linkedin" aria-hidden="true"></i
-                          ></a>
-                          <div class="click-to-copy-container">
-                            <button 
-                              class="click-to-copy text-white"
-                              title="Click to Copy Email Address"
-                              id="emailButton"
-                            >
-                              cameron@crosendeveloper.com
-                            </button>
-                            <span>Copied!</span>
-                          </div>
-                          <!-- fallback link for mobile resolution -->
-                          <a href="mailto:cameron@crosendeveloper.com" class="click-to-copy-fallback m-4">
-                            cameron@crosendeveloper.com
-                          </a>                             
-                          </div>
-                                                
-                      <!-- <form class="">
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                          <label for="inputFirstName" class="col-sm-2 col-form-label">First name</label>                          
-                            <input type="text" id="inputFirstName" class="form-control" placeholder="First name">
-                          </div>                        
-                          <div class="form-group col-md-6">
-                          <label for="inputLastName" class="col-sm-2 col-form-label">Last name</label>                          
-                            <input type="text" id="inputLastName" class="form-control" placeholder="Last name">
-                          </div>
-                        </div>
-                        <div class="form-row">
-                          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                          <div class="form-group col-md-6">
-                            <input type="email" id="inputEmail" class="form-control" placeholder="Email">
-                          </div>                        
-                        </div>
-                        <div class="form-group col-md-6 mt-3">
-                          <label for="description">Description</label>
-                          <textarea class="form-control" id="description" rows="5"></textarea>
-                        </div>
-                        <div class="form-group-row">
-                          <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary mt-3">Reach Out</button>
-                          </div>
-                        </div>
-                      </form> -->
+            <div class="about-section content container-fluid bg-light">
+              <div class="row d-flex justify-content-center" id="contact">
+                <div class="col-md mx-auto">                    
+                  <h1>Contact</h1>
+                  <p>If you'd like to reach out with commens or questions, you can do so using the following links!</p>
+                  <div class="row row-content">
+                    <div class="col-md text-center">
+                    <div class="d-flex align-items-center justify-content-center contact-icons">         
+                      <a class="nav-link" href="https://github.com/CRose17"
+                      target="_blank"
+                      ><i class="fab fa-github-square" aria-hidden="true"></i
+                      ></a>
+                      <a class="nav-link" href="https://www.linkedin.com/in/cameron-rosenberger/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin" aria-hidden="true"></i
+                      ></a>                      
+                      <div class="click-to-copy-container mx-auto">
+                      <button 
+                        class="click-to-copy text-white"
+                        title="Click to Copy Email Address"
+                        id="emailButton"
+                      >
+                      cameron@crosendeveloper.com
+                      </button>
+                      <span>Copied!</span>
+                      </div>
+                      <!-- fallback link for mobile resolution -->
+                      <a href="mailto:cameron@crosendeveloper.com" class="click-to-copy-fallback m-4">
+                      cameron@crosendeveloper.com
+                      </a>                                                  
+                      </div>
+                    </div>
                   </div>
+                </div>
               </div>
-            </div>
-        </div>
+            </div>        
     </main>
     <footer class="bg-dark text-white d-flex justify-content-center py-3">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row mt-3">
             <div class="col-8 col-md-5 mx-auto">
               <a href="#"><img src="images/newDevLogo.png" alt="" class=" nav-link active img-fluid"/></a>
