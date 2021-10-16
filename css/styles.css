@@ -99,10 +99,10 @@ h3 {
 }
 
 .card-img-top {
-  width: 50%;
+  /*   width: 50%;
   min-width: 50%;
   height: 50%;
-  min-height: 50%;
+  min-height: 50%; */
 }
 
 .card-footer {
@@ -222,4 +222,8 @@ a.click-to-copy-fallback {
   a.click-to-copy-fallback {
     display: block;
   }
+}
+
+.footer-logo {
+  width: 150px;
 }
