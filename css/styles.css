@@ -94,6 +94,22 @@ h3 {
   border-radius: 0;
 }
 
+/* .carousel-items {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+} */
+
+/* .carousel-image {
+  width: 600px;
+  height: 500px;
+}
+
+.carousel-skills {
+  width: 600px;
+  height: 500px;
+} */
+
 .contact-icons a i {
   font-size: 4rem;
 }
